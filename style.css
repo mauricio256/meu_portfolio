@@ -1,4 +1,4 @@
-body,ul{
+body{
     margin: 0px;
     padding: 0px;
     background-color: #acacac;
@@ -16,21 +16,24 @@ body,ul{
 }
 
 #logo{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #d89400;
     font-family: 'Roboto', sans-serif;
+    transition: .3s;
+    margin-top: 5px;
 }
 
 #logo:hover{
-    transition: .2s;
-    font-size: 2rem;
+    transition: .3s;
+    font-size: 2.3rem;
 }
 
 a{
     color: black;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    margin-top: -15px;
 }
 
 #menu{
@@ -61,14 +64,14 @@ a{
 }
 
 
-.painel1{
+.sobre{
     display: grid;
     grid-template-columns: 500px 500px;
     margin: 5rem 10rem;
     padding: 1rem;
 }
 
-.painel2{
+.painel{
     color: #d89400;
     margin: 8rem 10rem;
     background-color: #000000; 
@@ -76,6 +79,33 @@ a{
     text-align: center;
     padding: 2rem;
 }
+
+div.formacao{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+div.formacao a{
+   color: rgb(116, 116, 240);
+   text-decoration: underline;
+}
+
+div.formacao p{
+    text-align:left;
+ }
+
+
+div.icones_habilidades{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 10px 0px;
+}
+
+div.icones_habilidades img{
+    margin: 50px 0px 05px 0px;
+    color: #fff;
+}
+
+
 
 h1{
     font-family: 'Roboto', sans-serif;
