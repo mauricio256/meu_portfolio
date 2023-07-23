@@ -4,6 +4,46 @@ body{
     background-color: #acacac;
 }
 
+a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: -15px;
+}
+
+div.sobre h1{
+    font-family: 'Sail', sans-serif;
+    font-size: 3rem;
+    text-align: start;
+    color: #d89400;
+    text-shadow: 0.1em 0.1em #6e6b6b;
+}
+
+div.sobre b{
+    color: #2b2a2a;
+}
+
+div.sobre p{
+    font-family:sans-serif;
+    text-align:start;
+    box-shadow: 2px 2px 5px #6e6b6b;
+    padding: 15px;
+    margin: 0px 30px 0px 0px;
+}
+
+.titulo{
+    font-size: 35px;
+}
+
+label{
+    color: #fff;
+    font-size: 15px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
 #header{
     box-sizing: border-box;
     display: flex;
@@ -29,12 +69,7 @@ body{
     font-size: 2.3rem;
 }
 
-a{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    margin-top: -15px;
-}
+
 
 #menu{
     display: flex;
@@ -54,26 +89,37 @@ a{
 }
 
 #header #menu a:hover{
-    transition: .2s;
-    font-size: 18px;
-    margin: 0 .5rem;
+    transition: .5s;
+    font-size: 15px;
+    margin: 0 .1rem;
 }
 
-#btn-mobile{
-    display: none;
-}
-
-
-.sobre{
+div.sobre{
     display: grid;
-    grid-template-columns: 500px 500px;
-    margin: 5rem 10rem;
+    grid-template-columns: 50% 50%;
+    margin: 5rem 2rem;
     padding: 1rem;
 }
 
-.painel{
+div.sobre #icones{
+    display: flex;
+    list-style: none;
+}
+
+div.sobre #icones a{
+    transition: .5s;
+    padding: .5rem;
+}
+
+div.sobre #icones a:hover{
+    transition: .5s;
+    padding: 2rem;
+}
+
+div.painel{
     color: #d89400;
-    margin: 8rem 10rem;
+    height: 90%;
+    margin: 8rem 8rem;
     background-color: #000000; 
     box-shadow: 10px 10px 0px 3px #6e6b6b;
     text-align: center;
@@ -91,84 +137,71 @@ div.formacao a{
 
 div.formacao p{
     text-align:left;
- }
-
+}
 
 div.icones_habilidades{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+div.icones_habilidades div{
+    margin: 15px 0;
+}
+
+
+div.projetos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     padding: 10px 0px;
+    text-align:center;
 }
 
-div.icones_habilidades img{
-    margin: 50px 0px 05px 0px;
+div.projetos img{
+    width: 80%;
+}
+
+div.projetos a{
     color: #fff;
+    background-color: #d89400; 
+    box-shadow: 5px 5px 0px 1px #6e6b6b;
+    padding: 5px;
+    transition: .3s;
+}    
+
+div.projetos a:hover{
+ transition: .3s;
+ font-size: 16px;
+ margin-left: 5px;
+ text-decoration: underline;
+ color: rgb(0, 0, 243);
+}
+
+div.tutoriais{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 15px;
+    text-align:center;
 }
 
 
-
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-}
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-
-.titulo{
-    font-size: 35px;
-}
-
-label{
-    color: #fff;
-    font-size: 15px;
-}
-
-.painel2 li{
-    color:#d89400;
-    font-size: 20px;
-    list-style: none;
-    background-color: #000000;
-}
-
-.painel2 li a{
-    color:#d89400;
-    text-decoration-line: underline;
-}
-
-.painel2 li a:hover{
-    color:blue;
-}
-
-#icones{
-    display: flex;
-    list-style: none;
-}
-
-#icones a{
-    padding: 1.2rem;
-}
-
-#icones p{
-    padding: 1.2rem;
-}
 
 button{
-   position: fixed;
-   margin-top: 23rem;
-   transition: .5s; 
-   margin-left: 2rem;
-}
-
-button:hover{
-   transition: .5s; 
-   margin-top:22rem;
+    position: fixed;
+    margin-top: 30%;
+    transition: .5s; 
+    margin-left: 95%;
+    box-shadow: 2px 2px 0px 1px #6e6b6b;
  }
+ 
+ button:hover{
+    transition: .5s; 
+    margin-top: 29%;
+}
 
 footer{
     color:#d89400;
     padding: 2rem;
+    height: 200px;
     text-align: center;
     background-color: #2b2a2a; 
     box-shadow: 0px 0px 15px #6e6b6b;
